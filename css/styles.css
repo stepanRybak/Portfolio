@@ -1,7 +1,7 @@
 .navbar{ background:rgb(53, 51, 50);}
-.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
-.nav-link{ margin-right: 2em;}
-.nav-link:hover{ background: #5b768896;
+#navbarlink , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+#navbarlink { margin-right: 2em;}
+#navbarlink:hover{ background: #8299a896;
      transform: scale(1);
     color: black;
     border-radius: 10px;
@@ -24,3 +24,7 @@ body {
 }
 
 .smaller-image{ width: 80px; height: 60px;}
+
+#txWrap{
+    word-wrap: break-word;
+}

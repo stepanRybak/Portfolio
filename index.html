@@ -26,17 +26,17 @@
          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
              <li class="nav-item active">
-               <a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span > &nbsp;Home <span class="sr-only">(current)</span></a>
+               <a class="nav-link"   id="navbarlink" href="#"><span class="fa fa-home fa-lg"></span > &nbsp;Home <span class="sr-only">(current)</span></a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="#"><span class="fa fa-wifi fa-lg"></span>&nbsp;Services</a>
+               <a class="nav-link" id="navbarlink" href="#"><span class="fa fa-wifi fa-lg"></span>&nbsp;Services</a>
              </li>
             
              <li class="nav-item">
-                  <a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span>&nbsp; About Us</a>
+                  <a class="nav-link" id="navbarlink" href="#"><span class="fa fa-info fa-lg"></span>&nbsp; About Us</a>
                 </li>
                 <li class="nav-item">
-                     <a class="nav-link " href="#"><span class="fa fa-address-card fa-lg"></span>&nbsp;Contact </a>
+                     <a class="nav-link " id="navbarlink" href="#"><span class="fa fa-address-card fa-lg"></span>&nbsp;Contact </a>
                    </li>
            </ul>
          </div>
@@ -45,18 +45,24 @@
         <!--Wireless Penetration Testing Heading-->
     <header class="jumbotron">
          <div class="container">
-             <div class="row -">
-                <div class="col-sm-3 offset-md-2">
+             <div class="row row-content ">
+                <div class="col-sm-3 col-md-2 align-self-center">
                     <!---- <img src="wifi.png" class="smaller-image offset-sm-2"/>-->
-                <i class="fa fa-wifi fa-lg " style= "font-size: 80px"  ></i>
+                <i class="fa fa-wifi fa-lg " style= "font-size: 100px"  ></i>
                 </div>
                
-             </div>
-             <div class="row">
-                 <div class="col-sm-3 offset-md-2">               
-                     <h2 style="font-family:lulo-clean-w01-one-bold,sans-serif; font-weight:bold; line-height:1em; border: 1px; "><br>WIRELESS PENETRATION TESTING</h2>
+             
+             
+                 <div class="col-sm-3 col-md-6 align-self-lg-end"> 
+                    <h1>Kizel Security<hr></h1>              
+                     <h4 style="font-family:lulo-clean-w01-one-bold,sans-serif; font-weight:bold; line-height:1em; border: 1px; ">WIRELESS PENETRATION TESTING</h4>
                  </div>
+                 <div class="col-12 col-sm-3 col-md-4 align-self-center justify-content-center offset-sm-0">
+                     <div id="txWrap" role="button" type="button" class="btn btn-dark btn-lg btn-block"
+                         data-toggle="tooltip" data-html="true" title=" Call us at <br><strong>+(253)301-8570</strong>"
+                         data-placement="bottom">Is your Wifi secure ?</div>
              </div>
+
              
          </div>
      </header>
@@ -69,6 +75,10 @@
    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script>
+         $(document).ready(function () {
+             $('[data-toggle="tooltip"]').tooltip();
+         }); </script>
 </body>
 
 </html>
