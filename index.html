@@ -16,27 +16,27 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top ">
-        <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark ">
+        <a class="navbar-brand" href="#"><h4>Kizel Security</h4></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav mr-4">
-                <li class="nav-item">
-                    <a class="nav-link" data-value="about" href="#">About</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> &nbsp;Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="portfolio" href="#">Portfolio</a>
+                    <a class="nav-link" href="#"><span class="fa fa-wifi fa-lg"></span>&nbsp;Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span>&nbsp; About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="blog" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " data-value="team" href="#">         Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " data-value="contact" href="#">Contact</a>
+                    <a class="nav-link " href="#"><span class="fa fa-address-card fa-lg"></span>&nbsp;Contact </a>
                 </li>
             </ul>
         </div>
@@ -45,11 +45,11 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row">
-                <i class="fa fa-wifi offset-sm-4" style="font-size:70px; position:static; padding-left:30px;"></i>
+                <i class="fa fa-wifi offset-sm-1" style="font-size:80px; position:static; padding-left:35px;"></i>
             </div>
             <div class="row">
-                <div class="col-sm-3 offset-md-4">               
-                    <h1 style="font-family:lulo-clean-w01-one-bold,sans-serif; font-weight:bold; line-height:1em; font-size: 50px;">WIRELESS PENETRATION TESTING</h1>
+                <div class="col-sm-3 offset-md-1">
+                    <h1 style="font-family:lulo-clean-w01-one-bold,sans-serif; font-weight:bold; line-height:1em; font-size: 60px;">WIRELESS PENETRATION TESTING</h1>
                 </div>
             </div>
             <!--<ol class="col-12 breadcrumb">
@@ -58,12 +58,82 @@
             </ol>-->
         </div>
     </header>
+    <div class="row row-content">
+        <div class="col-9">
 
+            <h2>Services</h2>
+            <div class="d-flex flex-row mt-2 ">
+                <ul class="nav nav-tabs flex-column nav-tabs-dark" id="myTab" role="navigation">
+                    <li class="nav-item nav-item-style">
+                        <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-controls="home">
+                            NETWORK
+                            VULNERABILITY ASSESSMENT
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-style">
+                        <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">
+                            WIRELESS
+                            SECURITY ASSESSMENT
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item-style" id="vtabs">
+                        <a class="nav-link" data-toggle="tab" href="#messages" role="tab" aria-controls="messages">
+                            PASSWORD
+                            RECOVERY
+                        </a>
+                    </li>
 
-    <!----<H1 class="d-none d-sm-block"><p> HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</p></H1>-->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home" role="tabpanel">
+                        <p>
+                            Network vulnerability assessment is a process that identifies, and classifies the security holes
+                            (vulnerabilities) in a computer, network, or communications infrastructure.
+                        </p>
+                        <p>
+                            A Vulnerability Assessment identifies and prioritizes the information security strengths and
+                            weaknesses of your organization’s computing environment from a technical perspective and provides
+                            a plan-of-action so that you can mitigate risk of serious consequences from any exploitable
+                            components that can lead to unauthorized access. Give it a try today and discover your network
+                            vulnerabilities.
+                        </p>
+                    </div>
+                    <div class="tab-pane" id="profile" role="tabpanel">
+                        <p>
+                            Yes, we do hack wireless networks. Why? Really simple, to find vulnerabilities in your network
+                            before the bad guys do. Wireless networks are a high value target for hackers. To protect your
+                            organization from a wireless network breach our team emulates the methods a hacker would use to
+                            break your encryption key, test your authentication technology and identify unauthorized access
+                            techniques.
+                        </p>
+                        <p>
+                            A wireless security assessment gives your organization a direct look into the current state of
+                            your wireless implementation, wireless assets, configuration standards and vulnerabilities. Do you
+                            still believe your network is secure ? We can find out.
+                        </p>
+                    </div>
+                    <div class="tab-pane" id="messages" role="tabpanel">
+                        <p>
+                            You can't logging into your windows account or Mac Book because you forgot your password ? Or
+                            maybe you can't open your password protected PDF or Microsoft Office Documents. We can help you.
+                        </p>
+                        <ul>
+                            <li>Break into password-protected ZIP/RAR archives.</li>
+                            <li>Reset / recover windows password.</li>
+                            <li>Reset MacBook password.</li>
+                            <li>Recover Password from PDF Microsoft Office documents</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!----<H1 class="d-none d-sm-block"><p> HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</p></H1>-->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

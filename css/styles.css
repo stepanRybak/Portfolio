@@ -1,9 +1,26 @@
-.navbar{ background:#F97300;}
-.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
-.nav-link{ margin-right: 1em !important;}
-.nav-link:hover{ background: #f4f4f4; color: #f97300; }
-.navbar-collapse{ justify-content: flex-end;}
-.navbar-toggler{  background:#fff !important;}
+.navbar {
+    background: rgb(53, 51, 50);
+}
+
+.nav-link, .navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 2em;
+}
+
+    .nav-link:hover {
+        transform: scale(1);
+        color: black;
+        border-radius: 10px;
+    }
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
 .smaller-image{ width: 80px; height: 60px;}
 
 
@@ -27,3 +44,28 @@ body {
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 50px 2px #000;
 }
+
+.row-content {
+    margin: 0px auto;
+    padding: 40px 0px 40px 0px;
+    min-height: 400px;
+    background-color: white;
+}
+
+.nav-item-style {
+    width: 350px !important;
+    color: black !important;
+}
+
+    .nav-item-style:hover {
+        background-color: white;
+        color: red !important;
+    }
+
+#vtabs {
+    color: black;
+}
+
+    #vtabs:hover {
+        background-color: red;
+    }
