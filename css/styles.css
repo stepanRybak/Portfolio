@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .navbar {
     background: rgb(53, 51, 50);
 }
@@ -22,10 +23,22 @@
 }
 
 .smaller-image{ width: 80px; height: 60px;}
+=======
+.navbar{ background:rgb(53, 51, 50);}
+#navbarlink , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+#navbarlink { margin-right: 2em;}
+#navbarlink:hover{ background: #8299a896;
+     transform: scale(1);
+    color: black;
+    border-radius: 10px;
+}
+.navbar-collapse{ justify-content: flex-end;}
+>>>>>>> 9403744d434aedd6eae232402f4d6d916a94e69a
 
 
 body {
     background-image: url("../airport-business-cabinets-236093.jpg");
+<<<<<<< HEAD
     background-size: 50%, 80%, auto;
 }
 .jumbotron {
@@ -68,3 +81,22 @@ body {
     #vtabs:hover {
         background-color: red;
     }
+=======
+    
+    background-size:  100%, auto;
+    opacity: 0.;
+}
+
+.jumbotron {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background-image: radial-gradient(rgb(228, 220, 220), rgb(6, 41, 41));
+    color: antiquewhite;
+}
+
+.smaller-image{ width: 80px; height: 60px;}
+
+#txWrap{
+    word-wrap: break-word;
+}
+>>>>>>> 9403744d434aedd6eae232402f4d6d916a94e69a
