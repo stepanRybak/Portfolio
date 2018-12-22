@@ -1,46 +1,69 @@
-.navbar {
-    background: rgb(53, 51, 50);
-}
-
-#navbarlink, .navbar-brand {
-    color: #f4f4f4;
-    cursor: pointer;
-}
-
-#navbarlink {
-    margin-right: 2em;
-}
-
-    #navbarlink:hover {
-        background: #8299a896;
-        transform: scale(1);
-        color: black;
-        border-radius: 10px;
+/*Navigation bar*/
+.navbar{ 
+    background:rgb(53, 51, 50);
+    box-shadow: 3px 40px 70px #000000;
     }
-
 .navbar-collapse {
     justify-content: flex-end;
 }
-
-
-body {
-    background-image: url("../airport-business-cabinets-236093.jpg");
-    background-size: 100%, auto;
-    
+#navbarlink , .navbar-brand{ 
+    color: #f4f4f4; cursor: pointer;
+}
+#navbarlink { 
+    margin-right: 2em;
+}
+#navbarlink:hover{ background: #8299a8;
+     transform: scale(1);
+    color: black;
+    border-radius: 10px;
 }
 
-.jumbotron {
-    padding: 70px 30px 70px 30px;
+/*Jumbotron*/
+.jumbotron-fluid {
+    padding: 120px 30px 30px 30px;
     margin: 0px auto;
     background-image: radial-gradient(rgb(228, 220, 220), rgb(6, 41, 41));
     color: antiquewhite;
 }
-
-.smaller-image {
-    width: 80px;
-    height: 60px;
+#txWrap{
+    word-wrap: break-word;
 }
 
-#txWrap {
-    word-wrap: break-word;
+/*Our Services*/
+.row-content {
+    margin: 0px auto;
+    padding: 40px 0px 40px 0px;
+    min-height: 450px;
+}
+.nav-pills .nav-link {
+    width: 350px;
+}
+#tabbedrow {
+    background-color: lightgray;
+}
+    /*Navigation pill inactive*/
+.nav-pills .pill-1 .nav-link:not(.active) {
+    background-color: lightgray;
+    color: black;
+}
+.nav-pills .pill-2 .nav-link:not(.active) {
+    background-color: lightgray;
+    color: black;
+}
+.nav-pills .pill-3 .nav-link:not(.active) {
+    background-color: lightgray;
+    color: black;
+}
+    /* Navigation Pills Active (faded) */
+.nav-pills .pill-1 .nav-link {
+    background-color: rgb(130, 0, 0);
+    color: white;
+}
+.nav-pills .pill-2 .nav-link {
+    background-color: rgb(0, 130, 0);
+    color: white;
+}
+.nav-pills .pill-3 .nav-link {
+    background-color: rgb(0, 0, 130);
+    color: white;
 }
