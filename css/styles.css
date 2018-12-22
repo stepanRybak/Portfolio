@@ -1,4 +1,6 @@
-.navbar{ background:rgb(53, 51, 50);}
+.navbar{ background:rgb(53, 51, 50);
+    box-shadow: 3px 40px 70px #000000;
+    }
 #navbarlink , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
 #navbarlink { margin-right: 2em;}
 #navbarlink:hover{ background: #8299a896;
@@ -16,8 +18,8 @@ body {
     opacity: 0.;
 }
 
-.jumbotron {
-    padding: 70px 30px 70px 30px;
+.jumbotron-fluid {
+    padding: 40px 30px 30px 30px;
     margin: 0px auto;
     background-image: radial-gradient(rgb(228, 220, 220), rgb(6, 41, 41));
     color: antiquewhite;
@@ -27,4 +29,8 @@ body {
 
 #txWrap{
     word-wrap: break-word;
+}
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
 }
