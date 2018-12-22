@@ -1,18 +1,18 @@
-<<<<<<< HEAD
 .navbar {
     background: rgb(53, 51, 50);
 }
 
-.nav-link, .navbar-brand {
+#navbarlink, .navbar-brand {
     color: #f4f4f4;
     cursor: pointer;
 }
 
-.nav-link {
+#navbarlink {
     margin-right: 2em;
 }
 
-    .nav-link:hover {
+    #navbarlink:hover {
+        background: #8299a896;
         transform: scale(1);
         color: black;
         border-radius: 10px;
@@ -22,69 +22,11 @@
     justify-content: flex-end;
 }
 
-.smaller-image{ width: 80px; height: 60px;}
-=======
-.navbar{ background:rgb(53, 51, 50);}
-#navbarlink , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
-#navbarlink { margin-right: 2em;}
-#navbarlink:hover{ background: #8299a896;
-     transform: scale(1);
-    color: black;
-    border-radius: 10px;
-}
-.navbar-collapse{ justify-content: flex-end;}
->>>>>>> 9403744d434aedd6eae232402f4d6d916a94e69a
-
 
 body {
     background-image: url("../airport-business-cabinets-236093.jpg");
-<<<<<<< HEAD
-    background-size: 50%, 80%, auto;
-}
-.jumbotron {
-    padding: 70px 30px 70px 30px;
-    margin: 0px auto;
-    background-image: radial-gradient(rgb(228, 220, 220), rgb(6, 41, 41));
-}
-
-#popup {
-    display: none;
-    position: absolute;
-    margin: 0 auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 50px 2px #000;
-}
-
-.row-content {
-    margin: 0px auto;
-    padding: 40px 0px 40px 0px;
-    min-height: 400px;
-    background-color: white;
-}
-
-.nav-item-style {
-    width: 350px !important;
-    color: black !important;
-}
-
-    .nav-item-style:hover {
-        background-color: white;
-        color: red !important;
-    }
-
-#vtabs {
-    color: black;
-}
-
-    #vtabs:hover {
-        background-color: red;
-    }
-=======
+    background-size: 100%, auto;
     
-    background-size:  100%, auto;
-    opacity: 0.;
 }
 
 .jumbotron {
@@ -94,9 +36,11 @@ body {
     color: antiquewhite;
 }
 
-.smaller-image{ width: 80px; height: 60px;}
+.smaller-image {
+    width: 80px;
+    height: 60px;
+}
 
-#txWrap{
+#txWrap {
     word-wrap: break-word;
 }
->>>>>>> 9403744d434aedd6eae232402f4d6d916a94e69a
