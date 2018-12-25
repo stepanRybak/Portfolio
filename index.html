@@ -1,115 +1,382 @@
-<!Doctype html >
+<!Doctype html>
 <html>
-
 <head>
-   <!-- Required meta tags always come first -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-   <link rel="stylesheet" href="css/styles.css">
-   <title>Penetration Testing </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Penetration Testing </title>
 </head>
 
 <body>
-   <!-- navbar -->
-   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">
-         <h4>Kizel Security</h4>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="main-nav">
+        <a class="navbar-brand" href="#">
+            <h4>Kizel Security</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-               <a class="nav-link" id="navbarlink" href="#"><span class="fa fa-home fa-lg"></span> &nbsp;Home <span
-                     class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" id="navbarlink" href="#"><span class="fa fa-wifi fa-lg"></span>&nbsp;Services</a>
-            </li>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" id="navbarlink" href="#">
+                        <span class="fa fa-home fa-lg"></span> &nbsp;Home <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="navbarlink" href="#"><span class="fa fa-wifi fa-lg"></span>&nbsp;Services</a>
+                </li>
 
-            <li class="nav-item">
-               <a class="nav-link" id="navbarlink" href="#"><span class="fa fa-info fa-lg"></span>&nbsp; About Us</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link " id="navbarlink" href="#"><span class="fa fa-address-card fa-lg"></span>&nbsp;Contact
-               </a>
-            </li>
-         </ul>
-      </div>
-   </nav>
+                <li class="nav-item">
+                    <a class="nav-link" id="navbarlink" href="#"><span class="fa fa-info fa-lg"></span>&nbsp; About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="navbarlink" href="#">
+                        <span class="fa fa-address-card fa-lg"></span>&nbsp;Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-   <!--Wireless Penetration Testing Heading-->
-   <header class="jumbotron-fluid">
-      <div class="container">
-         <div class="row row-content ">
-            <div class="col-sm-3 col-md-2 align-self-center">
-               <!---- <img src="wifi.png" class="smaller-image offset-sm-2"/>-->
-               <i class="fa fa-wifi fa-lg " style="font-size: 100px"></i>
+    <!--Wireless Penetration Testing Heading-->
+    <header class="jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 align-self-center">
+                    <i class="fa fa-wifi fa-lg " style="font-size: 100px"></i>
+                </div>
+                <div class="col-sm-3 col-md-6 align-self-md-end" style="color:white">
+                    <h1>
+                        Kizel Security
+                    </h1>
+                    <hr>
+                    <h4 style="font-family:lulo-clean-w01-one-bold,sans-serif; font-weight:bold; line-height:1em; border: 1px; ">
+                        WIRELESS PENETRATION TESTING
+                    </h4>
+                </div>
+                <div class="col-12 col-sm-3 col-md-4 align-self-center justify-content-center offset-sm-0">
+                    <div id="txWrap" role="button" type="button" class="btn btn-dark btn-lg btn-block" data-toggle="tooltip"
+                        data-html="true" title=" Call us at <br><strong>+(253)301-8570</strong>" data-placement="bottom">
+                        Is your Wifi secure ?
+                    </div>
+                </div>
             </div>
+        </div>
+    </header>
 
-
-
-            <div class="col-sm-3 col-md-6 align-self-md-end"style="color:white">
-               <h1>Kizel Security
-                  <hr>
-               </h1>
-               <h4 style="font-family:lulo-clean-w01-one-bold,sans-serif; font-weight:bold; line-height:1em; border: 1px; ">WIRELESS
-                  PENETRATION TESTING</h4>
+    <!--Information-->
+    <div class="row row-content lead">
+        <div class="container">
+            <div class="col-12">
+                <h2></h2>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="testingHead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#testing">
+                                    What is Wireless Penetration Testing
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse show" id="testing" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-sm-block">
+                                    Wireless Attack and Penetration Assessments are strategic and isolated attacks
+                                    against the client’s wireless systems.
+                                    Our team will simulate a hacker and attempt to identify, exploit weaknesses within
+                                    these systems.
+                                    Wireless access points provide a simple way for hackers to penetrate your internal
+                                    network.
+                                    Wireless Penetration Test will identify vulnerabilities and offer advice for
+                                    hardening and remediation.
+                                    Do you still believe your wireless network is secure?
+                                </p>
+                                <p class="d-sm-block">
+                                    We can find out.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="approachHead">
+                            <h3 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#approach">
+                                    Approach and Methodology
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="approach" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-sm-block">
+                                    Our team may initiate several attacks depending on the wireless environment.
+                                    If weak protocols are discovered, active attacks will be run in an attempt to break
+                                    the encryption on the affected networks.
+                                    These attacks can include man in the middle (MitM) attacks, brute force attacks,
+                                    session hijacking, and mass de-authentication.
+                                    During a Wireless Attack and Penetration,
+                                    our team will take a wireless footprint of the target environment to identify all
+                                    access points that belong to your organization.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-sm-3 col-md-4 align-self-center justify-content-center offset-sm-0">
-               <div id="txWrap" role="button" type="button" class="btn btn-dark btn-lg btn-block" data-toggle="tooltip"
-                  data-html="true" title=" Call us at <br><strong>+(253)301-8570</strong>" data-placement="bottom">Is
-                  your Wifi secure ?</div>
+        </div>
+    </div>
+
+    <!--Our Services-->
+    <div class=" tabbedrow row">
+        <div class="container">
+            <div class="row row-content">
+                <div class="container">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Services
+                                    <hr>
+                                </h2>
+                            </div>
+                        </div>
+
+                        <!-- Nav tabs -->
+                        <div>
+                            <div class="row row-content">
+                                <ul class="nav nav-tabs flex-column col-sm-5 col-md-4" id="myTab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="nAssessment-tab" data-toggle="tab" href="#nAssessment"
+                                            role="tab" aria-controls="nAssessment" aria-selected="true">
+                                            <h5>NETWORK VULNERABILITY ASSESSMENT&nbsp;<i class="fa fa-angle-double-right fa-lg"></i></h5>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="wAssessment-tab" data-toggle="tab" href="#wAssessment"
+                                            role="tab" aria-controls="wAssessment" aria-selected="false">
+                                            <h5>WIRELESS SECURITY ASSESSMENT&nbsp;<i class="fa fa-angle-double-right fa-lg"></i></h5>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="passwRecovery-tab" data-toggle="tab" href="#passwRecovery"
+                                            role="tab" aria-controls="passwRecovery" aria-selected="false">
+                                            <h5>PASSWORD RECOVERY&nbsp;<i class="fa fa-angle-double-right fa-lg"></i></h5>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content col-sm-7 col-md-8 justify-content-center position-relative">
+                                    <div class="tab-pane fade show active" id="nAssessment" role="tabpanel"
+                                        aria-labelledby="nAssessment-tab">
+                                        <p class="lead">
+                                            Network vulnerability assessment is a process that identifies, and
+                                            classifies the security holes
+                                            (vulnerabilities) in a computer, network, or communications infrastructure.
+                                        </p>
+                                        <p class="lead d-none d-md-block">
+                                            A Vulnerability Assessment identifies and prioritizes the information
+                                            security strengths and
+                                            weaknesses of your organization’s computing environment from a technical
+                                            perspective and provides
+                                            a plan-of-action so that you can mitigate risk of serious consequences from
+                                            any exploitable
+                                            components that can lead to unauthorized access. Give it a try today and
+                                            discover your network
+                                            vulnerabilities.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="wAssessment" role="tabpanel" aria-labelledby="wAssessment-tab">
+                                        <p class="lead  d-none d-md-block">
+                                            Yes, we do hack wireless networks. Why? Really simple, to find
+                                            vulnerabilities in your network
+                                            before the bad guys do. Wireless networks are a high value
+                                            target for hackers. To protect your
+                                            organization from a wireless network breach our team emulates
+                                            the methods a hacker would use to
+                                            break your encryption key, test your authentication technology
+                                            and identify unauthorized access
+                                            techniques.
+                                        </p>
+                                        <p class="lead ">
+                                            A wireless security assessment gives your organization a direct
+                                            look into the current state of
+                                            your wireless implementation, wireless assets, configuration
+                                            standards and vulnerabilities. Do you
+                                            still believe your network is secure ? We can find out.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane" id="passwRecovery" role="tabpanel" aria-labelledby="passwRecovery-tab">
+                                        <p class="lead  d-none d-md-block">
+                                            You can't logging into your windows account or Mac Book because
+                                            you forgot your password ? Or
+                                            maybe you can't open your password protected PDF or Microsoft
+                                            Office Documents. We can help you.
+                                        </p>
+                                        <ul class="lead">
+                                            <li>Break into password-protected ZIP/RAR archives.</li>
+                                            <li>Reset / recover windows password.</li>
+                                            <li>Reset MacBook password.</li>
+                                            <li>Recover Password from PDF Microsoft Office documents</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
 
+    <!-- Contact Form -->
+    <div class="container ">
+        <div class="row ">
+            <div class="col-12" style="margin-top:40px;">
+                <h2>Contact Us</h2>
+                <hr />
+            </div>
+        </div>
+    </div>
+    <div class=" tabbedrow container ">
+        <div class="row row-content  lead">
+            <div class="  col-12 ">
+                <form>
+                    <div class="form-group row">
+                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area Code">
+                        </div>
+                        <div class="col-7 col-md-7">
+                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 offset-md-2">
+                            <div class="form-check">
+                                <input type="checkbox" type="form-check-input" name="approve" id="approve" value="">
+                                <label class="form-check-label" for="approve">
+                                    <strong>May we contact you?</strong>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1">
+                            <select class="form-control">
+                                <option>Tel.</option>
+                                <option>Email</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Description</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="feedback" name="feedback" row="12"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-dark">
+                                Send Request
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-         </div>
-   </header>
+    <!-- Footer -->
+    <footer class="page-footer font-small lighten-3 pt-4 footer-content text-white">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <!-- Grid row -->
+            <div class="row">
 
-   <div class="container">
-      <div class="row row-content">
-         <div class="col">
-              <h2>What is Wireless Penetration Testing</h2> 
-              <p> Wireless Attack and Penetration Assessments are strategic and isolated attacks against the client’s wireless systems. Our team will simulate a hacker and attempt to identify, exploit weaknesses within these systems.Wireless access points provide a simple way for hackers to penetrate your internal network. Wireless Penetration Test will identify vulnerabilities and offer advice for hardening and remediation.  Do you still believe your wireless network is secure ? We can find out .
-               </p>
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-4 mr-auto my-md-4 my-0 mt-4 mb-1">
 
-               <h2>Approach and Methodology</h2>
-               <p>   
-                     Our team may initiate several attacks depending on the wireless environment. If weak protocols are discovered, active attacks will be run in an attempt to break the encryption on the affected networks. These attacks  can include man in the middle (MitM) attacks, brute force     attacks,  session  hijacking,  and  mass  de-authentication.
-           
-           During a Wireless Attack and Penetration, our team will take a wireless footprint of the target environment to identify all access points that belong to your organization.</p>
+                    <!-- Contact details -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Contact</h5>
 
- 
-   
-    
+                    <ul class="list-unstyled lead">
+                        <li>
+                            <p>
+                                <i class="fa fa-home mr-3"></i> Seattle, WA</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa fa-envelope mr-3"></i> admin@kizelsecurity.com</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa fa-phone mr-3"></i> (253) 301-8570</p>
+                        </li>
+                    </ul>
 
-   
-    
-         </div>
-      </div>
-   </div>
+                </div>
+                <!-- Grid column -->
 
+                <hr class="clearfix w-100 d-md-none">
 
-   <!----<H1 class="d-none d-sm-block"><p> HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</p></H1>-->
+                <!-- Grid column -->
+                <div class="col-md-8 col-lg-8 mx-auto my-md-6 my-0 mt-4 mb-1">
 
+                    <!-- Contact details -->
+                    <p class="lead">PUT CONTENT HERE</p>
 
-   <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-   <script>
-      $(document).ready(function () {
-         $('[data-toggle="tooltip"]').tooltip();
-      }); </script>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 copyright-content">© 2018 Copyright: Kizel Security
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
