@@ -1,5 +1,6 @@
 <!Doctype html>
 <html>
+
 <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
@@ -8,7 +9,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Penetration Testing </title>
@@ -17,9 +20,10 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="main-nav">
-        <a class="navbar-brand" href="#">
-            <h4>Kizel Security</h4>
-        </a>
+            <a class="navbar-brand" href="#">
+                    <!--<h4>Kizel Security</h4>-->
+                    <img src="logo.png" height="50px">
+                </a>         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,14 +37,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="navbarlink" href="#"><span class="fa fa-wifi fa-lg"></span>&nbsp;Services</a>
+                    <a class="nav-link" id="navbarlink" href="#ourservices"><span class="fa fa-wifi fa-lg"></span>&nbsp;Services</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" id="navbarlink" href="#"><span class="fa fa-info fa-lg"></span>&nbsp; About Us</a>
+                    <a class="nav-link" id="navbarlink" href="#about"><span class="fa fa-info fa-lg"></span>&nbsp;
+                        About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " id="navbarlink" href="#">
+                    <a class="nav-link " id="navbarlink" href="#contactus">
                         <span class="fa fa-address-card fa-lg"></span>&nbsp;Contact
                     </a>
                 </li>
@@ -55,7 +60,7 @@
                 <div class="col-sm-3 col-md-2 align-self-center">
                     <i class="fa fa-wifi fa-lg " style="font-size: 100px"></i>
                 </div>
-                <div class="col-sm-3 col-md-6 align-self-md-end" style="color:white">
+                <div class="col-sm-3 col-md-5 align-self-md-end" style="color:white">
                     <h1>
                         Kizel Security
                     </h1>
@@ -64,10 +69,10 @@
                         WIRELESS PENETRATION TESTING
                     </h4>
                 </div>
-                <div class="col-12 col-sm-3 col-md-4 align-self-center justify-content-center offset-sm-0">
+                <div class="col-12 col-sm-5 col-md-4 align-self-center  offset-sm-1">
                     <div id="txWrap" role="button" type="button" class="btn btn-dark btn-lg btn-block" data-toggle="tooltip"
                         data-html="true" title=" Call us at <br><strong>+(253)301-8570</strong>" data-placement="bottom">
-                        Is your Wifi secure ?
+                        Is your Wifi secure?
                     </div>
                 </div>
             </div>
@@ -81,15 +86,16 @@
                 <h2></h2>
                 <div id="accordion">
                     <div class="card">
-                        <div class="card-header" role="tab" id="testingHead">
-                            <h3 class="mb-0">
-                                <a data-toggle="collapse" data-target="#testing">
-                                    What is Wireless Penetration Testing
-                                </a>
-                            </h3>
-                        </div>
+                        <a data-toggle="collapse" data-target="#testing">
+                            <div class="card-header" role="tab" id="testingHead">
+                                <h3 class="mb-0">
+                                    <span class="fa fa-angle-double-up"></span>
+                                    &nbsp;What is Wireless Penetration Testing
+                                </h3>
+                            </div>
+                        </a>
                         <div class="collapse show" id="testing" data-parent="#accordion">
-                            <div class="card-body">
+                            <div class="card-body ">
                                 <p class="d-sm-block">
                                     Wireless Attack and Penetration Assessments are strategic and isolated attacks
                                     against the client’s wireless systems.
@@ -108,13 +114,14 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" role="tab" id="approachHead">
-                            <h3 class="mb-0">
-                                <a class="collapsed" data-toggle="collapse" data-target="#approach">
-                                    Approach and Methodology
-                                </a>
-                            </h3>
-                        </div>
+                        <a class="collapsed" data-toggle="collapse" data-target="#approach">
+                            <div class="card-header" role="tab" id="approachHead">
+                                <h3 class="mb-0">
+                                    <span class="fa fa-angle-double-down"></span>
+                                    &nbsp;Approach and Methodology
+                                </h3>
+                            </div>
+                        </a>
                         <div class="collapse" id="approach" data-parent="#accordion">
                             <div class="card-body">
                                 <p class="d-sm-block">
@@ -129,6 +136,7 @@
                                 </p>
                             </div>
                         </div>
+                        <div id="ourservices"></div>
                     </div>
                 </div>
             </div>
@@ -136,14 +144,28 @@
     </div>
 
     <!--Our Services-->
-    <div class=" tabbedrow row">
+    <div class=" tabbedrow ">
         <div class="container">
             <div class="row row-content">
                 <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-3 text-center">
+                            <i class="fa fa-server" style="font-size: 60px;"></i>
+                        </div>
+                        <div class="col-3 text-center">
+                            <i class="fas fa-toolbox" style="font-size: 60px;"></i>
+                        </div>
+                        <div class="col-3 text-center">
+                            <i class="fas fa-network-wired" style="font-size: 60px;"></i>
+                        </div>
+                    </div>
+
+                    <br /><br />
+
                     <div class="col-12">
                         <div class="row">
                             <div class="col-12">
-                                <h2>Services
+                                <h2 class="display-4">Services
                                     <hr>
                                 </h2>
                             </div>
@@ -196,7 +218,7 @@
                                         </p>
                                     </div>
                                     <div class="tab-pane fade" id="wAssessment" role="tabpanel" aria-labelledby="wAssessment-tab">
-                                        <p class="lead  d-none d-md-block">
+                                        <p class="lead d-none d-md-block">
                                             Yes, we do hack wireless networks. Why? Really simple, to find
                                             vulnerabilities in your network
                                             before the bad guys do. Wireless networks are a high value
@@ -207,7 +229,7 @@
                                             and identify unauthorized access
                                             techniques.
                                         </p>
-                                        <p class="lead ">
+                                        <p class="lead">
                                             A wireless security assessment gives your organization a direct
                                             look into the current state of
                                             your wireless implementation, wireless assets, configuration
@@ -216,7 +238,7 @@
                                         </p>
                                     </div>
                                     <div class="tab-pane" id="passwRecovery" role="tabpanel" aria-labelledby="passwRecovery-tab">
-                                        <p class="lead  d-none d-md-block">
+                                        <p class="lead d-none  d-md-block">
                                             You can't logging into your windows account or Mac Book because
                                             you forgot your password ? Or
                                             maybe you can't open your password protected PDF or Microsoft
@@ -231,6 +253,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div id="about"></div>
                         </div>
                     </div>
                 </div>
@@ -238,76 +261,112 @@
         </div>
     </div>
 
-    <!-- Contact Form -->
-    <div class="container ">
-        <div class="row ">
-            <div class="col-12" style="margin-top:40px;">
-                <h2>Contact Us</h2>
-                <hr />
+    <!-- About Us-->
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-12">
+                <h2 class="display-4">About Us
+                    <hr>
+                </h2>
             </div>
+
+            <!--Page content-->
+            <div class="row row-content">
+                <div class="col-12 col-sm-6">
+                    <h2>Our Company</h2>
+                    <p class="lead">We are a small company based in Seattle area that offers the cyber security
+                        services. We are using most popular tools (<em>Linux, Metasploit, Nessus</em> ) and effective
+                        methods and techniques to facilitate your needs.
+                    </p>
+
+                    <h4>We Are Specializing In</h4>
+                    <h5 class="lead">
+                        <ol>
+                            <li>Wireless Penetration Testing</li>
+                            <li>Network Vulnerability Assessment</li>
+                            <li>Windows Password Recovery</li>
+                            <li>Microsoft Word ZIP / PDF / RAR /<br> Password Recovery</li>
+                        </ol>
+                    </h5>
+                </div>
+                <div class="col-sm-6 align-self-md-center"><img id="About" class="img-fluid" src="About.jpg" alt="Network security image"></div>
+            </div>
+            <div id="contactus"></div>
         </div>
     </div>
-    <div class=" tabbedrow container ">
-        <div class="row row-content  lead">
-            <div class="  col-12 ">
-                <form>
-                    <div class="form-group row">
-                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
-                        <div class="col-5 col-md-3">
-                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area Code">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="emailid" class="col-md-2 col-form-label">Email</label>
-                        <div class="col-md-10">
-                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-md-6 offset-md-2">
-                            <div class="form-check">
-                                <input type="checkbox" type="form-check-input" name="approve" id="approve" value="">
-                                <label class="form-check-label" for="approve">
-                                    <strong>May we contact you?</strong>
-                                </label>
+
+    <!-- Contact Form -->
+    <div class=" tabbedrow ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style="margin-top:40px;">
+                    <h2 class="display-4">Contact Us</h2>
+                    <hr />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-content lead">
+                <div class="  col-12 ">
+                    <form>
+                        <div class="form-group row">
+                            <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
                             </div>
                         </div>
-                        <div class="col-md-3 offset-md-1">
-                            <select class="form-control">
-                                <option>Tel.</option>
-                                <option>Email</option>
-                            </select>
+                        <div class="form-group row">
+                            <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="feedback" class="col-md-2 col-form-label">Description</label>
-                        <div class="col-md-10">
-                            <textarea class="form-control" id="feedback" name="feedback" row="12"></textarea>
+                        <div class="form-group row">
+                            <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                            <div class="col-5 col-md-3">
+                                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area Code">
+                            </div>
+                            <div class="col-7 col-md-7">
+                                <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-dark">
-                                Send Request
-                            </button>
+                        <div class="form-group row">
+                            <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                            </div>
                         </div>
-                    </div>
-                </form>
+                        <div class="form-group row">
+                            <div class="col-md-6 offset-md-2">
+                                <div class="form-check">
+                                    <input type="checkbox" type="form-check-input" name="approve" id="approve" value="">
+                                    <label class="form-check-label" for="approve">
+                                        <strong>May we contact you?</strong>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 offset-md-1">
+                                <select class="form-control">
+                                    <option>Tel.</option>
+                                    <option>Email</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label">Description</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="feedback" name="feedback" row="12"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-dark">
+                                    Send Request
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -346,13 +405,27 @@
                 <hr class="clearfix w-100 d-md-none">
 
                 <!-- Grid column -->
-                <div class="col-md-8 col-lg-8 mx-auto my-md-6 my-0 mt-4 mb-1">
+                <div class="col-md-4 col-lg-4 mr-auto my-md-4 my-0 mt-4 mb-1 text-center">
 
                     <!-- Contact details -->
-                    <p class="lead">PUT CONTENT HERE</p>
-
+                    <h5 class="font-weight-bold text-uppercase mb-4">IS YOUR NETWORK SECURE?</h5>
+                    <p class="lead">Hire Us!</p><br>
+                    <i class="fa fa-shield-alt fa-lg" style="font-size: 150px"></i>
                 </div>
                 <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-4 mr-auto my-md-4 my-0 mt-4 mb-1 text-md-center">
+                    <h5 class="font-weight-bold text-uppercase mb-4">Links</h5>
+                    <ul class="list-unstyled lead">
+                        <li><a href="#" class="underlink">Home</a></li>
+                        <li><a href="#about" class="underlink">About</a></li>
+                        <li><a href="#ourservices" class="underlink">Services</a></li>
+                        <li><a href="#contactus" class="underlink">Contact</a></li>
+                    </ul>
+                </div>
 
             </div>
             <!-- Grid row -->
@@ -368,6 +441,8 @@
     </footer>
     <!-- Footer -->
 
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -377,6 +452,20 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
+
+    <script>
+        $("[data-toggle='collapse']").click(function (e) {
+            var $this = $(this);
+            var $icon = $this.find("span[class^='fa']");
+
+            if ($icon.hasClass('fa-angle-double-up')) {
+                $icon.removeClass('fa-angle-double-up').addClass('fa-angle-double-down');
+            } else {
+                $icon.removeClass('fa-angle-double-down').addClass('fa-angle-double-up');
+            }
+        });
+    </script>
+
 </body>
 
 </html>

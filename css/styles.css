@@ -1,58 +1,108 @@
-/*Navigation bar*/
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  /*Navigation bar*/
 .navbar{
-    background:rgb(53, 51, 50);
-    box-shadow: 3px 40px 70px #000000;
-    }
+   background:rgb(53, 51, 50);
+   box-shadow: 3px 40px 70px #000000;
+   }
+
 .navbar-collapse {
-    justify-content: flex-end;
+   justify-content: flex-end;
 }
+
 #navbarlink , .navbar-brand{
-    color: #f4f4f4; cursor: pointer;
+   color: #f4f4f4; cursor: pointer;
 }
+
 #navbarlink {
-    margin-right: 2em;
+   margin-right: 2em;
 }
+
 #navbarlink:hover{ background: #8299a8;
-   transform: scale(1);
-    color: black;
-    border-radius: 10px;
+  transform: scale(1);
+   color: black;
+   border-radius: 10px;
 }
 
 /*Jumbotron*/
 .jumbotron-fluid {
-    padding: 120px 30px 30px 30px;
-    margin: 0px auto;
-    background-image: radial-gradient(rgb(228, 220, 220), rgb(6, 41, 41));
-    color: antiquewhite;
+   padding: 120px 30px 30px 30px;
+   margin: 0px auto;
+   background-image: radial-gradient(rgb(228, 220, 220), rgb(6, 41, 41));
+   color: antiquewhite;
 }
+
 #txWrap{
-    word-wrap: break-word;
+   word-wrap: break-word;
 }
+
 /*Our Services*/
 .row-content {
-    margin: 0px auto;
-    padding: 40px 0px 40px 0px;
-    min-height: 450px;
+   margin: 0px auto;
+   padding: 40px 0px 40px 0px;
+   min-height: 450px;
+}
+ .tabbedrow {
+   background-color: lightgray;
 }
   
-.tabbedrow {
-    background-color: lightgray;
-}
-    
 .footer-content {
-   background:rgb(53, 51, 50);
+  background:rgb(53, 51, 50);
 }
-
 
 .nav-tabs .nav-item .nav-link:not(.active) {
-    background-color: lightgray;
-    color: black;
-} 
+   background-color: lightgray;
+   color: black;
+}
 
 .nav-tabs .nav-item .nav-link   {
-    background-color: rgb(130, 0, 0);
-    text-decoration-color: #f4f4f4;
-    color: white;
-   
-   
+   background-color: rgb(130, 0, 0);
+   text-decoration-color: #f4f4f4;
+   color: white;
+}
+
+
+/* Footer Navigation */
+.underlink {
+    color: #fff;
+    text-decoration: none;    
+    position: relative;
+  }
+.underlink:hover {
+    color: #fff;
+    text-decoration: none;
+}
+  .underlink:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    color: #f4f4f4; 
+    cursor: pointer;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .underlink:hover:after { 
+    width: 100%; 
+    left: 0; 
+    color: #f4f4f4; 
+    cursor: pointer;
+  }
+
+
+#About{
+    border-radius: 25px;
+    box-shadow: 30px 40px 90px #000000;
+    transition: 5s all;
+}
+
+#About:hover{
+    transform:scale(1.1);
 }
